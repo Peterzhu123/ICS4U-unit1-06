@@ -1,23 +1,23 @@
-/****************************************************************************
- * Created by: Peter Zhu
- * Created on: Feb 2018
- * This is is a program about Random number 
- * ****************************************************************************/
+// Created by Peter 
+// Created on May
+// This is a program about random number between 0 and maxValue
+
 import java.util.Random;
-import java.util.Scanner;
 
-public class random{
+public class random {
+	 public static void main(String[] args) {
+		 RollDie(50);
+         
+	 }
+	 
+	 public static void RollDie(int maxValue) {
+         int number;
+		 
+		 System.out.print("Enter a number:  ");
+		 Random dice = new Random();	 
+		 number = dice.nextInt(maxValue);
+		 System.out.println("Your number is  " + maxValue);
+		 System.out.println("The random number is  " + number);
+	 }
 
-	public static void main (String[]args){
-		int number;
-		int max;
-
-		System.out.print("Enter a number:    ");
-		Random dice=new Random();
-    Scanner input=new Scanner(System.in);
-		max=input.nextInt();
-
-		number=dice.nextInt(max);
-		System.out.print(number);
-
-
+}
